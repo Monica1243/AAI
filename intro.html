@@ -68,9 +68,45 @@
                 document.getElementById('img').style.display = "block";
                 document.getElementById('center').style.display = "none";
             }
+
+            function validateForm() {
+                let x = document.forms["login-form"]["name"].value;
+                let y = document.forms["login-form"]["Password"].value;
+                if (x == "" && y == "") {
+                  alert("Name must be filled out");
+                  alert("Password must be filled out");
+                  return false;
+                }
+                else if(x == ""){
+                    alert("Name must be filled out");
+                    return false;
+                }
+                else if(y == ""){
+                    alert("Password must be filled out");
+                    return false;
+                }
+                else{
+                    window.location.href('intro.html')
+                }
+            }
+            
         </script>
-        
+        <hr>
+        <footer class="login">
+            <form name="login-form" onsubmit="return validateForm()">
+                <h1>Login</h1>
+
+                <div class="fill-up">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name">
+                    <br><br>
+                    <label for="Password">Password :</label>
+                    <input type="text" name="Password" id="Password">
+                    <br><br>
+                    <button type="submit">Login</button>
+                </div>
+                <br>
+            </form>
+        </footer>
     </body>
 </html>
-
-
