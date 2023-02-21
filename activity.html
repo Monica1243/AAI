@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <p class="demo"></p>
+    <body>
+        <script>
+            var num = [1, 10, 26,58,41,2,86];
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+            
+            document.writeln("Array Length : " + num.length);
+            document.writeln("<br>");
+
+            document.writeln("Accessing Array Elements : ");
+            for(i=0; i<num.length; i++){
+                document.writeln("Array[" + (i+1)  + "] : " + num[i]);
+                document.writeln("<br>");
+            }
+
+            document.writeln("Pushing Elements into Array  <br>" );
+            num.push(5);
+            num.push(4);
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>"); 
+            document.writeln("Join Function : <br>"); 
+            document.writeln(num.join(" * "));
+            document.writeln("<br>");
+
+            document.writeln("Popping Elements out of an Array  <br>" );
+            num.pop();
+            num.pop();
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Shift Function : <br>");
+            num.shift();
+            num.shift();
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Unshift Function : <br>");
+            document.writeln(num.unshift(26));
+            document.writeln("<br>");
+            document.writeln(num.shift(58));
+            document.writeln("<br>");
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Delete Function : <br>");
+            document.writeln("delete num[0]: <br>");
+            delete num[0];
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Splice Function : <br>");
+            num.splice(0,1);
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Slice Function : <br>");
+            num.slice(0,1);
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Sort Function : <br>");
+            num.sort();
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            document.writeln("Reverse Function : <br>");
+            num.reverse();
+            document.writeln("Array Elements : "+ num);
+            document.writeln("<br>");
+
+            const numbers2 = num.map(myFunction);
+
+            function myFunction(value, index, array) {
+            return value * 2;
+            }
+            document.writeln("value * 2 <br>");
+            document.writeln("Array Elements : "+ numbers2);
+            document.writeln("<br>");
+
+        </script>
+    </body>
+</html>
