@@ -1,0 +1,12 @@
+.login{
+    text-align: center;
+    overflow-x: scroll;
+    color: rgb(211, 174, 115);
+}
+
+.login .fill-up{
+    padding: 20px;
+    border-style: double;
+    border-color: black;
+    text-align:unset;
+}
