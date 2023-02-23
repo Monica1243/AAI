@@ -66,16 +66,3 @@ body .img{
     width: 50%;
 }
 
-footer{
-    text-align: center;
-    overflow-x: scroll;
-    height: 100px;
-    color: rgb(211, 174, 115);
-}
-
-footer .fill-up{
-    padding: 20px;
-    border-style: double;
-    border-color: black;
-    text-align:unset;
-}
